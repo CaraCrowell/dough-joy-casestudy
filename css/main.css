@@ -5,9 +5,8 @@
   --color-text: #333333;
   --color-background: #ffffff;
 
-font-family: "cheee-tbone", sans-serif;
-font-weight: 400;
-font-style: normal;
+--font-sans-serif: Montserrat, sans-serif;
+--font-serif: Cartograph cf, serif;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -17,3 +16,41 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
+/**Typography**/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-black);
+  margin: 0;
+}
+
+body{
+font-family: var(--font-sans-serif  );
+color:#333333;
+
+}
+
+a{}
+
+img{
+    max-width: 100%;
+  display: block;
+}
+
+.component img{
+    max-width: initial;
+
+}   
+
+.component__img{
+    border: 1px solid #333333;
+    overflow-x: scroll;
+}   
+.component__code{
+    border: 1px solid #333333;
+}
+
+/** .component**/
+
