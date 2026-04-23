@@ -37,6 +37,7 @@ a{}
 img{
     max-width: 100%;
   display: block;
+  border: 1px solid #333333;
 }
 
 .component img{
@@ -45,7 +46,7 @@ img{
 }   
 
 .component__img{
-    border: 1px solid #333333;
+    border: 1px solid #e40909;
     overflow-x: scroll;
 }   
 .component__code{
