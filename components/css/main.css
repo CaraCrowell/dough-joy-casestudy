@@ -1,13 +1,12 @@
 :root {
   --color-primary: #97dbce;
-  --color-secondary: ##ffbbe4;
+  --color-secondary: #ffbbe4;
   --color-accent:  #bebef4;
   --color-text: #333333;
   --color-background: #f7eee7;
 
 
---font-sans-serif: Montserrat, sans-serif;
---font-serif: Cartograph cf, serif;
+
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -21,23 +20,45 @@ html {
 
 /**Typography**/
 
+/**
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--Cartograph-serif);
   color: var(--color-black);
-  margin: 0;
-}
+  margin: 0;**/
+
+h1 {font-family: "haboro-soft", sans-serif;
+font-weight: 800;
+font-style: normal;}
+
+font-family: "novecento-sans-wide", sans-serif;
+font-weight: 600;
+font-style: normal;
 
 h2 {
-  font-family: var(--Cartograph-serif);
+  font-family: "cartograph-cf", monospace;
+font-weight: 700;
+font-style: normal;
+ 
 }
 
-p {
-  font-family: var(Montserrat-sans-serif);
-  color: red /** just testing **/
+h3 {
+font-family: "cartograph-cf", monospace;
+font-weight: 400;
+font-style: normal;
+}
+
+
+
+h4, p{
+font-family: "montserrat", sans-serif;
+font-weight: 400;
+font-style: normal;
+  
+  
 }
 
 body{
-font-family: var(--Montserrat-sans-serif  );
+font-family: var(--Montserrat-sans-serif);
 color:#333333;
 
 }
@@ -63,14 +84,47 @@ img{
  
 
 .component__img{
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: inline-block;
     border: 1px solid #e40909;
     overflow-x: scroll;
+    padding: 2rem;
+    margin: 2rem;
+    
 }   
 .component__code{
     border: 3px solid #333333;
+    background-color: #f7eee7;
+    padding: 2rem;
 }
+
+.container__specials /**flex container for specials**/{
+  background-color: #ffbbe4;
+  font-size: .5rem;
+  display: block;
+  
+ 
+
+  
+  
+}
+
+
+
+
+.specials__images{
+display: flex;
+flex-direction: row;
+
+}
+
+.specials__button{
+border-radius: 8px;
+padding: 10px 20px;
+justify-content: center;
+}
+
+
 
 /** .component**/
 
@@ -119,3 +173,10 @@ img{
 }
 
 
+.container__inputs{
+  display: flex;
+}
+
+.input-social{}
+
+.input-email{}
